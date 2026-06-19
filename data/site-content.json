@@ -1,0 +1,94 @@
+{
+  "heroTitle": "L&R SOLUTIONS structure et accélère votre croissance.",
+  "heroText": "Cabinet de conseil nouvelle génération, L&R SOLUTIONS accompagne les entreprises, indépendants, associations et dirigeants dans leur développement commercial, leur présence digitale et leur transformation numérique.",
+  "slogan": "Solutions intelligentes, résultats durables.",
+  "services": [
+    {
+      "title": "Conseil et accompagnement",
+      "text": "Clarifier votre stratégie, cadrer vos priorités et avancer avec un plan d'action concret."
+    },
+    {
+      "title": "Développement commercial",
+      "text": "Structurer votre offre, vos canaux d'acquisition, votre prospection et votre suivi client."
+    },
+    {
+      "title": "Marketing et communication",
+      "text": "Renforcer votre positionnement, votre image de marque et votre visibilité auprès des bons publics."
+    },
+    {
+      "title": "Création de sites internet",
+      "text": "Concevoir des sites vitrines modernes, rapides, responsives et pensés pour convertir."
+    },
+    {
+      "title": "Développement d'applications web",
+      "text": "Créer des outils métiers, tableaux de bord et interfaces sur mesure pour vos opérations."
+    },
+    {
+      "title": "Automatisation de processus",
+      "text": "Réduire les tâches répétitives grâce à des workflows simples, fiables et mesurables."
+    },
+    {
+      "title": "Solutions numériques",
+      "text": "Choisir, intégrer et optimiser les bons outils pour piloter votre activité au quotidien."
+    },
+    {
+      "title": "Digitalisation des entreprises",
+      "text": "Moderniser vos méthodes de travail, vos documents, votre organisation et votre suivi."
+    },
+    {
+      "title": "Formations",
+      "text": "Former les dirigeants et équipes aux outils numériques, au marketing, à l'IA et à l'automatisation."
+    },
+    {
+      "title": "Evénementiel professionnel",
+      "text": "Structurer, organiser et valoriser vos événements professionnels, rencontres et lancements."
+    },
+    {
+      "title": "Mise en relation et partenariats",
+      "text": "Identifier des opportunités qualifiées et créer des connexions utiles à votre développement."
+    }
+  ],
+  "pricing": [
+    {
+      "name": "Essentiel",
+      "price": "49€/mois",
+      "description": "Pour poser les bases, obtenir un regard externe et avancer avec des conseils réguliers.",
+      "features": ["Audit rapide", "1 rendez-vous mensuel", "Conseils stratégiques", "Support email"]
+    },
+    {
+      "name": "Standard",
+      "price": "149€/mois",
+      "description": "L'offre la plus populaire pour structurer votre activité avec un suivi clair et priorisé.",
+      "features": ["Accompagnement complet", "Conseils stratégiques", "2 rendez-vous mensuels", "Support prioritaire", "Reporting mensuel"]
+    },
+    {
+      "name": "Premium",
+      "price": "299€/mois",
+      "description": "Un accompagnement avancé pour accélérer, automatiser et suivre vos résultats en détail.",
+      "features": ["Accompagnement avancé", "Réunions illimitées", "Support prioritaire", "Automatisations simples", "Reporting détaillé"]
+    },
+    {
+      "name": "Sur Mesure",
+      "price": "Sur devis",
+      "description": "Une solution personnalisée pour les besoins complexes, spécifiques ou évolutifs.",
+      "features": ["Prestations personnalisées", "Développement spécifique", "Accompagnement dédié"]
+    }
+  ],
+  "blog": [
+    {
+      "title": "Structurer sa croissance avant d'accélérer",
+      "date": "2026-06-18",
+      "excerpt": "Pourquoi une stratégie claire, des outils simples et un suivi régulier changent la trajectoire d'une entreprise."
+    },
+    {
+      "title": "Créer un site internet qui génère vraiment des demandes",
+      "date": "2026-06-18",
+      "excerpt": "Les fondamentaux d'un site vitrine professionnel : message, confiance, preuves, appels à l'action et vitesse."
+    },
+    {
+      "title": "Automatisation : par où commencer sans complexifier l'entreprise ?",
+      "date": "2026-06-18",
+      "excerpt": "Identifier les tâches répétitives, prioriser les gains rapides et déployer des automatisations utiles."
+    }
+  ]
+}
