@@ -4,6 +4,13 @@ import { PageIntro } from "@/components/Chrome";
 import { ProjectGallery } from "@/components/InteractiveSections";
 import { projects } from "@/lib/site";
 
+export const metadata = {
+  title: "Réalisations | L&R SOLUTIONS",
+  description: "Découvrez des exemples de projets digitaux, commerciaux et stratégiques réalisés par L&R SOLUTIONS.",
+  alternates: { canonical: "/realisations" },
+  openGraph: { url: "https://letrsolutions.fr/realisations" },
+};
+
 export default function ProjectsPage() {
   return (
     <>

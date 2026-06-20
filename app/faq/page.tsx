@@ -4,6 +4,13 @@ import { PageIntro } from "@/components/Chrome";
 import { FaqExplorer } from "@/components/InteractiveSections";
 import { faqs } from "@/lib/site";
 
+export const metadata = {
+  title: "FAQ | L&R SOLUTIONS",
+  description: "Réponses aux questions fréquentes sur les services, tarifs, projets et accompagnements L&R SOLUTIONS.",
+  alternates: { canonical: "/faq" },
+  openGraph: { url: "https://letrsolutions.fr/faq" },
+};
+
 export default function FaqPage() {
   return (
     <>

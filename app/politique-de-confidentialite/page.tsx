@@ -1,6 +1,13 @@
 import { PageIntro } from "@/components/Chrome";
 import { company } from "@/lib/site";
 
+export const metadata = {
+  title: "Politique de confidentialité | L&R SOLUTIONS",
+  description: "Politique de confidentialité et traitement des données personnelles sur le site L&R SOLUTIONS.",
+  alternates: { canonical: "/politique-de-confidentialite" },
+  openGraph: { url: "https://letrsolutions.fr/politique-de-confidentialite" },
+};
+
 export default function PrivacyPage() {
   return (
     <>

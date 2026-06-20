@@ -39,8 +39,13 @@ async function supabaseFetch<T>(path: string, init: RequestInit = {}): Promise<T
 
 export async function getSiteContentFromSupabase(): Promise<SiteContent | null> {
   if (!hasSupabaseServerConfig()) return null;
-  const rows = await supabaseFetch<Array<{ content: SiteContent }>>("site_content?id=eq.main&select=content&limit=1");
-  return rows[0]?.content ?? null;
+  try {
+    const rows = await supabaseFetch<Array<{ content: SiteContent }>>("site_content?id=eq.main&select=content&limit=1");
+    return rows[0]?.content ?? null;
+  } catch (error) {
+    console.warn("Supabase content unavailable, falling back to local content.", error);
+    return null;
+  }
 }
 
 export async function upsertSiteContentToSupabase(content: SiteContent) {
@@ -69,10 +74,18 @@ export async function insertSubmission(table: "contacts" | "quote_requests", pay
 
 export async function listSubmissions() {
   if (!hasSupabaseServerConfig()) return [];
-  const [contacts, quotes] = await Promise.all([
-    supabaseFetch<Array<SupabaseRow>>("contacts?select=*&order=created_at.desc&limit=100"),
-    supabaseFetch<Array<SupabaseRow>>("quote_requests?select=*&order=created_at.desc&limit=100"),
-  ]);
+  let contacts: SupabaseRow[] = [];
+  let quotes: SupabaseRow[] = [];
+
+  try {
+    [contacts, quotes] = await Promise.all([
+      supabaseFetch<Array<SupabaseRow>>("contacts?select=*&order=created_at.desc&limit=100"),
+      supabaseFetch<Array<SupabaseRow>>("quote_requests?select=*&order=created_at.desc&limit=100"),
+    ]);
+  } catch (error) {
+    console.warn("Supabase submissions unavailable.", error);
+    return [];
+  }
 
   return [
     ...contacts.map((row) => normalizeSubmission("contact", row)),

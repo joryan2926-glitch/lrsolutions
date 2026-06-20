@@ -20,7 +20,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: service.metaTitle,
     description: service.metaDescription,
+    alternates: {
+      canonical: `/services/${service.slug}`,
+    },
     openGraph: {
+      url: `https://letrsolutions.fr/services/${service.slug}`,
       title: service.metaTitle,
       description: service.metaDescription,
       images: ["/lr-solutions-logo-transparent.png"],

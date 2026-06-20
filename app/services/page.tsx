@@ -7,6 +7,13 @@ import { servicePages } from "@/lib/service-pages";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Services | L&R SOLUTIONS",
+  description: "Conseil, développement commercial, marketing, création web, applications, automatisation, digitalisation, formations et partenariats.",
+  alternates: { canonical: "/services" },
+  openGraph: { url: "https://letrsolutions.fr/services" },
+};
+
 const icons = [Users, BarChart3, Megaphone, Sparkles, Code2, Workflow, Shield, BriefcaseBusiness, CalendarDays, Handshake, Sparkles, Headphones];
 const benefitIcons = [Users, Shield, BarChart3, Headphones];
 

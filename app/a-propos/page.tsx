@@ -4,6 +4,13 @@ import { ArrowRight, Handshake, Lightbulb, Medal, ShieldCheck, Target } from "lu
 import { PageIntro } from "@/components/Chrome";
 import { stats, values } from "@/lib/site";
 
+export const metadata = {
+  title: "À propos | L&R SOLUTIONS",
+  description: "Découvrez L&R SOLUTIONS, startup française spécialisée dans le conseil, la digitalisation et l'accompagnement des entreprises.",
+  alternates: { canonical: "/a-propos" },
+  openGraph: { url: "https://letrsolutions.fr/a-propos" },
+};
+
 const storyItems = [
   ["Approche personnalisée", "Des solutions adaptées à chaque besoin.", Target],
   ["Innovation continue", "Des outils et méthodes à la pointe.", Lightbulb],

@@ -1,6 +1,13 @@
 import { PageIntro } from "@/components/Chrome";
 import { company } from "@/lib/site";
 
+export const metadata = {
+  title: "Mentions légales | L&R SOLUTIONS",
+  description: "Mentions légales du site officiel de L&R SOLUTIONS.",
+  alternates: { canonical: "/mentions-legales" },
+  openGraph: { url: "https://letrsolutions.fr/mentions-legales" },
+};
+
 export default function LegalPage() {
   return (
     <>

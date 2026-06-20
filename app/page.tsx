@@ -8,6 +8,10 @@ import { servicePages } from "@/lib/service-pages";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 const serviceIcons = [Users, BarChart3, Megaphone, Sparkles, Code2, Workflow, ShieldCheck, BriefcaseBusiness, Handshake];
 const proofs = ["Solutions sur mesure", "Accompagnement personnalisé", "Résultats mesurables", "Expertise et réactivité"];
 

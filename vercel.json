@@ -1,5 +1,18 @@
 {
   "framework": "nextjs",
   "buildCommand": "npm run build",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.letrsolutions.fr"
+        }
+      ],
+      "destination": "https://letrsolutions.fr/:path*",
+      "permanent": true
+    }
+  ]
 }

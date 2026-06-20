@@ -4,6 +4,13 @@ import { ContactForm } from "@/components/Forms";
 import { PageIntro } from "@/components/Chrome";
 import { company } from "@/lib/site";
 
+export const metadata = {
+  title: "Contact | L&R SOLUTIONS",
+  description: "Contactez L&R SOLUTIONS pour une demande de devis, un accompagnement ou un projet digital.",
+  alternates: { canonical: "/contact" },
+  openGraph: { url: "https://letrsolutions.fr/contact" },
+};
+
 export default function ContactPage() {
   return (
     <>

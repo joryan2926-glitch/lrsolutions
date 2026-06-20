@@ -3,6 +3,13 @@ import { ArrowRight, Check, Headphones, Shield, Settings } from "lucide-react";
 import { PageIntro } from "@/components/Chrome";
 import { faqs } from "@/lib/site";
 
+export const metadata = {
+  title: "Tarifs | L&R SOLUTIONS",
+  description: "Découvrez les packs d'accompagnement et prestations unitaires officielles de L&R SOLUTIONS.",
+  alternates: { canonical: "/tarifs" },
+  openGraph: { url: "https://letrsolutions.fr/tarifs" },
+};
+
 const packs = [
   {
     name: "Essentiel",
