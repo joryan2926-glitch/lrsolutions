@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "L&R SOLUTIONS | Solutions intelligentes, résultats durables",
     description: "Cabinet nouvelle génération pour structurer, digitaliser et accélérer la croissance des entreprises.",
-    images: ["/lr-solutions-logo.jpeg"],
+    images: ["/lr-solutions-logo-transparent.png"],
   },
 };
 
