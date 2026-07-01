@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Facebook, Instagram, Linkedin, Mail, MapPin, Menu, Phone, X } from "lucide-react";
-import { useState } from "react";
+import { ArrowRight, Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+
 import { company } from "@/lib/site";
 
 const nav = [
@@ -31,56 +31,29 @@ const services = [
 ];
 
 export function Header() {
-  const [open, setOpen] = useState(false);
-
   return (
     <header className="site-header">
-      <nav className="shell flex h-20 items-center justify-between">
-        <Link href="/" className="header-logo" onClick={() => setOpen(false)}>
+      <nav className="shell header-nav">
+        <Link href="/" className="header-logo">
           <Image src="/lr-solutions-logo-transparent.png" alt="Logo L&R Solutions" width={150} height={92} priority />
         </Link>
 
-        <div className="hidden items-center gap-8 xl:flex">
-          {nav.map(([label, href]) => (
-            <Link className="nav-link" href={href} key={href}>
-              {label}
-            </Link>
-          ))}
-        </div>
-
-        <Link href="/contact?type=devis" className="btn btn-primary hidden lg:inline-flex">
-          Demander un devis <ArrowRight size={16} />
-        </Link>
-
-        <button className="icon-menu xl:hidden" type="button" aria-label="Ouvrir le menu" onClick={() => setOpen(true)}>
-          <Menu size={22} />
-        </button>
-      </nav>
-
-      {open ? (
-        <div className="mobile-menu">
-          <div className="flex items-center justify-between">
-            <strong className="tracking-[.22em]">L&R SOLUTIONS</strong>
-            <button className="icon-menu" type="button" aria-label="Fermer le menu" onClick={() => setOpen(false)}>
-              <X size={22} />
-            </button>
-          </div>
-          <div className="mt-10 grid gap-3">
+        <div className="header-nav-scroll" aria-label="Navigation principale">
+          <div className="header-nav-links">
             {nav.map(([label, href]) => (
-              <Link className="glass px-5 py-4 text-lg font-semibold" href={href} key={href} onClick={() => setOpen(false)}>
+              <Link className="nav-link" href={href} key={href}>
                 {label}
               </Link>
             ))}
-            <Link className="btn btn-primary mt-4" href="/contact?type=devis" onClick={() => setOpen(false)}>
+            <Link href="/contact?type=devis" className="btn btn-primary header-cta">
               Demander un devis <ArrowRight size={16} />
             </Link>
           </div>
         </div>
-      ) : null}
+      </nav>
     </header>
   );
 }
-
 export function Footer() {
   return (
     <footer className="footer-premium">
