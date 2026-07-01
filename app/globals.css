@@ -73,6 +73,14 @@ body { margin:0; color:#fff; background:var(--night); font-family: Arial, Helvet
 .mini-card svg,.service-card-premium svg,.value-card svg { color:var(--blue); }
 .mini-card h3,.service-card-premium h2 { margin-top:14px; font-size:1.05rem; font-weight:900; }
 .mini-card p,.service-card-premium p,.value-card p { margin-top:10px; color:#566176; font-size:.86rem; line-height:1.55; }
+.trust-panel { margin-top:64px; display:grid; grid-template-columns:.85fr 1.15fr; gap:34px; align-items:stretch; border-radius:14px; background:#020b24; color:white; padding:34px; box-shadow:0 18px 50px rgba(2,11,36,.18); }
+.trust-panel h2 { margin-top:10px; font-size:2rem; line-height:1.15; font-weight:950; }
+.trust-panel > div > p { margin-top:18px; color:#dce6f5; line-height:1.75; }
+.trust-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+.trust-grid article { border:1px solid rgba(255,255,255,.12); border-radius:10px; background:rgba(255,255,255,.055); padding:20px; }
+.trust-grid strong { color:#5edcff; font-weight:950; }
+.trust-grid h3 { margin-top:10px; font-size:1.05rem; font-weight:900; }
+.trust-grid p { margin-top:8px; color:#cbd8e9; line-height:1.55; font-size:.9rem; }
 .benefit-strip,.pricing-benefits { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-top:-72px; position:relative; z-index:4; background:white; border:1px solid var(--line); border-radius:10px; box-shadow:0 12px 38px rgba(8,24,48,.08); }
 .benefit-item,.pricing-benefits div { display:flex; gap:18px; align-items:center; padding:26px; border-right:1px solid var(--line); }
 .benefit-item:last-child,.pricing-benefits div:last-child { border-right:0; }
@@ -291,7 +299,7 @@ body { margin:0; color:#fff; background:var(--night); font-family: Arial, Helvet
   .header-nav { gap:14px; }
   .header-nav-links { min-width:max-content; justify-content:flex-start; gap:18px; }
   .header-cta { padding:.75rem 1rem; font-size:.75rem; }
-  .home-hero-grid,.split-about,.about-story,.home-bottom,.contact-panel,.faq-layout { grid-template-columns:1fr; }
+  .home-hero-grid,.split-about,.about-story,.home-bottom,.trust-panel,.contact-panel,.faq-layout { grid-template-columns:1fr; }
   .service-detail-layout { grid-template-columns:1fr; }
   .sticky-quote { position:static; }
   .proof-row,.stats-row,.stat-band,.pricing-grid-premium,.values-grid,.unit-category-grid { grid-template-columns:repeat(2,1fr); }
@@ -309,7 +317,7 @@ body { margin:0; color:#fff; background:var(--night); font-family: Arial, Helvet
   .shell { width:min(100% - 28px, 1180px); }
   .home-hero-grid { min-height:auto; padding-block:50px; }
   .page-hero-logo .page-hero-inner { grid-template-columns:1fr; }
-  .proof-row,.stats-row,.stat-band,.mini-card-grid,.service-grid-premium,.project-grid,.article-grid,.pricing-grid-premium,.values-grid,.footer-grid,.benefit-strip,.pricing-benefits,.unit-category-grid { grid-template-columns:1fr; }
+  .proof-row,.stats-row,.stat-band,.mini-card-grid,.service-grid-premium,.project-grid,.article-grid,.pricing-grid-premium,.values-grid,.trust-grid,.footer-grid,.benefit-strip,.pricing-benefits,.unit-category-grid { grid-template-columns:1fr; }
   .pricing-premium.featured,.pricing-premium.featured:hover { transform:none; }
   .pricing-premium .plan-description { min-height:0; }
   .unit-pricing-section > h2 { font-size:1.8rem; }

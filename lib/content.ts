@@ -14,8 +14,10 @@ export type SiteContent = {
 };
 
 export async function getContent(): Promise<SiteContent> {
-  const content = await getSiteContentFromSupabase();
-  if (content) return content;
+  if (process.env.USE_SUPABASE_CONTENT === "true") {
+    const content = await getSiteContentFromSupabase();
+    if (content) return content;
+  }
 
   const file = path.join(process.cwd(), "data", "site-content.json");
   const raw = await readFile(file, "utf8");
