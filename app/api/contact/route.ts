@@ -9,6 +9,7 @@ export async function POST(request: Request) {
     const result = await saveSubmission("contact", payload);
     return NextResponse.json({ message: result.message, saved: result.saved });
   } catch (error) {
-    return NextResponse.json({ error: error instanceof Error ? error.message : "Erreur serveur." }, { status: 503 });
+    console.error("Contact submission failed", error);
+    return NextResponse.json({ error: "Le formulaire est temporairement indisponible. Merci de nous contacter directement par email ou téléphone." }, { status: 503 });
   }
 }

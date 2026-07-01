@@ -22,10 +22,10 @@ export function ContactForm({ type = "contact" }: { type?: FormType }) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(Object.fromEntries(new FormData(form))),
         });
-        const result = await response.json() as { message?: string; error?: string };
+        const result = await response.json() as { message?: string; error?: string; saved?: boolean };
         setMessage(result.message ?? result.error ?? "Demande envoyée.");
         setLoading(false);
-        if (response.ok && !result.error) form.reset();
+        if (response.ok && result.saved) form.reset();
       }}
     >
       <div className="grid gap-4 sm:grid-cols-2">

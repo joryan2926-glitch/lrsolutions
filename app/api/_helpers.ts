@@ -2,11 +2,18 @@ import { hasSupabaseServerConfig, insertSubmission } from "@/lib/supabase-server
 
 export type SubmissionKind = "contact" | "devis";
 
+const unavailableMessage = "Fonctionnalité bientôt disponible : l'envoi automatique n'est pas encore activé. Contactez-nous directement par email ou téléphone.";
+
 export async function saveSubmission(kind: SubmissionKind, payload: Record<string, string>) {
   if (!hasSupabaseServerConfig()) {
-    return { saved: false, message: "Supabase n'est pas encore configuré sur ce déploiement. Votre formulaire est prêt côté site." };
+    return { saved: false, message: unavailableMessage };
   }
 
-  await insertSubmission(kind === "contact" ? "contacts" : "quote_requests", payload);
-  return { saved: true, message: kind === "contact" ? "Votre message a bien été envoyé." : "Votre demande de devis a bien été envoyée." };
+  try {
+    await insertSubmission(kind === "contact" ? "contacts" : "quote_requests", payload);
+    return { saved: true, message: kind === "contact" ? "Votre message a bien été envoyé." : "Votre demande de devis a bien été envoyée." };
+  } catch (error) {
+    console.error("Submission storage unavailable", error);
+    return { saved: false, message: unavailableMessage };
+  }
 }
