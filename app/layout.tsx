@@ -15,7 +15,7 @@ const structuredData = {
       logo: `${baseUrl}/lr-solutions-logo-transparent.png`,
       image: `${baseUrl}/lr-solutions-logo-transparent.png`,
       slogan: "Solutions intelligentes, résultats durables.",
-      description: "Cabinet de conseil et de digitalisation spécialisé en accompagnement stratégique, développement commercial, création web, automatisation, IA, marketing digital et formations.",
+      description: "Cabinet de conseil et de digitalisation spécialisé en accompagnement stratégique, développement commercial, création web, automatisation, IA, marketing digital et solutions numériques.",
       email: "contact@lr-solutions.fr",
       telephone: "+33745678901",
       address: {
@@ -45,11 +45,8 @@ const structuredData = {
         "Développement commercial",
         "Marketing et communication",
         "Création de sites internet",
-        "Développement d'applications web",
         "Automatisation et IA",
         "Digitalisation des entreprises",
-        "Formations",
-        "Événementiel professionnel",
         "Mise en relation et partenariats",
       ].map((name, index) => ({
         "@type": "ListItem",
@@ -63,7 +60,7 @@ const structuredData = {
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: "L&R SOLUTIONS | Conseil, digitalisation & développement commercial",
-  description: "Site officiel de L&R SOLUTIONS, startup française à Saint-Étienne spécialisée en conseil, développement commercial, marketing, création web, automatisation, formations et solutions numériques.",
+  description: "Site officiel de L&R SOLUTIONS, startup française à Saint-Étienne spécialisée en conseil, développement commercial, marketing, création web, automatisation et solutions numériques.",
   openGraph: {
     url: baseUrl,
     siteName: "L&R SOLUTIONS",

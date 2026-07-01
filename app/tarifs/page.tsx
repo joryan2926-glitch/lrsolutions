@@ -61,14 +61,10 @@ const unitServices = [
   { category: "Développement Commercial", items: [["Stratégie commerciale", "149€"], ["Processus commercial", "249€"], ["Accompagnement prospection", "299€"]] },
   { category: "Marketing & Communication", items: [["Audit communication", "99€"], ["Création campagne", "199€"], ["Gestion réseaux sociaux", "à partir de 149€/mois"]] },
   { category: "Création de Sites Internet", items: [["Landing page", "299€"], ["Site vitrine", "690€"], ["Site professionnel", "990€"], ["Site premium", "1490€"]] },
-  { category: "Développement d'Applications", items: [["MVP simple", "à partir de 1990€"], ["Application métier", "Sur devis"], ["SaaS", "Sur devis"]] },
   { category: "Automatisation & IA", items: [["Audit IA", "99€"], ["Automatisation simple", "199€"], ["Automatisation avancée", "à partir de 490€"]] },
   { category: "Digitalisation des Entreprises", items: [["Diagnostic", "149€"], ["Mise en place outils", "299€"], ["Transformation digitale", "Sur devis"]] },
-  { category: "Formations", items: [["Formation individuelle", "79€"], ["Formation groupe", "199€"], ["Formation entreprise", "Sur devis"]] },
-  { category: "Événementiel Professionnel", items: [["Accompagnement événement", "149€"], ["Organisation complète", "Sur devis"]] },
   { category: "Mise en Relation & Partenariats", items: [["Recherche partenaires", "99€"], ["Mise en relation professionnelle", "149€"]] },
   { category: "Solutions Numériques", items: [["Mise en place CRM", "249€"], ["GED", "199€"], ["Outils collaboratifs", "149€"]] },
-  { category: "Support & Maintenance", items: [["Maintenance site", "29€/mois"], ["Maintenance premium", "59€/mois"], ["Intervention ponctuelle", "49€/heure"]] },
 ];
 
 export default function PricingPage() {

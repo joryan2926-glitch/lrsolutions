@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BarChart3, BriefcaseBusiness, CalendarDays, Code2, Handshake, Headphones, Megaphone, Shield, Sparkles, Users, Workflow } from "lucide-react";
+import { ArrowRight, BarChart3, Handshake, Headphones, Megaphone, Shield, Sparkles, Users, Workflow } from "lucide-react";
 import { PageIntro } from "@/components/Chrome";
 import { Reveal } from "@/components/Reveal";
 import { serviceBenefits } from "@/lib/site";
@@ -9,12 +9,12 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "Services | L&R SOLUTIONS",
-  description: "Conseil, développement commercial, marketing, création web, applications, automatisation, digitalisation, formations et partenariats.",
+  description: "Conseil, développement commercial, marketing, création web, automatisation, digitalisation, solutions numériques et partenariats.",
   alternates: { canonical: "/services" },
   openGraph: { url: "https://letrsolutions.fr/services" },
 };
 
-const icons = [Users, BarChart3, Megaphone, Sparkles, Code2, Workflow, Shield, BriefcaseBusiness, CalendarDays, Handshake, Sparkles, Headphones];
+const icons = [Users, BarChart3, Megaphone, Sparkles, Workflow, Shield, Handshake, Sparkles];
 const benefitIcons = [Users, Shield, BarChart3, Headphones];
 
 export default function ServicesPage() {

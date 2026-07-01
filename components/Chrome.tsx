@@ -20,11 +20,8 @@ const services = [
   "Développement Commercial",
   "Marketing & Communication",
   "Création de Sites Internet",
-  "Développement d'Applications",
   "Automatisation & IA",
   "Digitalisation des Entreprises",
-  "Formations",
-  "Événementiel Professionnel",
   "Mise en Relation & Partenariats",
 ];
 

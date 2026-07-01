@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BarChart3, BriefcaseBusiness, Check, Code2, Handshake, Megaphone, ShieldCheck, Sparkles, Users, Workflow } from "lucide-react";
+import { ArrowRight, BarChart3, Check, Handshake, Megaphone, ShieldCheck, Sparkles, Users, Workflow } from "lucide-react";
 import { ContactForm } from "@/components/Forms";
 import { getContent } from "@/lib/content";
 import { stats } from "@/lib/site";
@@ -12,7 +12,7 @@ export const metadata = {
   alternates: { canonical: "/" },
 };
 
-const serviceIcons = [Users, BarChart3, Megaphone, Sparkles, Code2, Workflow, ShieldCheck, BriefcaseBusiness, Handshake];
+const serviceIcons = [Users, BarChart3, Megaphone, Sparkles, Workflow, ShieldCheck, Handshake, Sparkles];
 const proofs = ["Solutions sur mesure", "Accompagnement personnalisé", "Résultats mesurables", "Expertise et réactivité"];
 
 export default async function Home() {

@@ -43,9 +43,7 @@ export function ContactForm({ type = "contact" }: { type?: FormType }) {
           <option>Développement commercial</option>
           <option>Marketing et communication</option>
           <option>Création de site internet</option>
-          <option>Développement d&apos;application web</option>
           <option>Automatisation de processus</option>
-          <option>Formation</option>
           <option>Autre besoin</option>
         </select>
       ) : (

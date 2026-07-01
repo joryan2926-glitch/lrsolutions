@@ -32,7 +32,7 @@ export const serviceBenefits = [
 
 export const faqs = [
   { category: "Général", question: "Qu'est-ce que L&R SOLUTIONS ?", answer: "L&R SOLUTIONS est une société spécialisée dans le conseil, la digitalisation, le développement numérique et l'accompagnement des entreprises." },
-  { category: "Services", question: "Quels services proposez-vous ?", answer: "Nous proposons du conseil, du développement commercial, du marketing, de la création de sites, du développement web, de l'automatisation, des formations et de la mise en relation." },
+  { category: "Services", question: "Quels services proposez-vous ?", answer: "Nous proposons du conseil, du développement commercial, du marketing, de la création de sites, de l'automatisation, de la digitalisation, des solutions numériques et de la mise en relation." },
   { category: "Projets", question: "Comment se déroule un projet avec L&R SOLUTIONS ?", answer: "Chaque mission démarre par un cadrage du besoin, puis une proposition claire, une phase de production et un suivi orienté résultats." },
   { category: "Projets", question: "Combien de temps faut-il pour réaliser un projet ?", answer: "Les délais dépendent du périmètre. Un diagnostic peut être réalisé rapidement, tandis qu'un projet web ou digital complet demande un planning dédié." },
   { category: "Tarifs & Paiement", question: "Comment sont définis vos tarifs ?", answer: "Les tarifs dépendent du besoin, de la complexité, du niveau d'accompagnement et des objectifs. Un devis personnalisé est proposé." },
