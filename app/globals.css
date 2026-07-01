@@ -214,8 +214,7 @@ body { margin:0; color:#fff; background:var(--night); font-family: Arial, Helvet
 .cta-band h3 { font-size:1.45rem; font-weight:900; }
 .cta-band p { margin-top:8px; color:#dce6f5; }
 .rocket-box { display:grid; place-items:center; width:76px; height:76px; border:1px solid rgba(0,102,255,.65); border-radius:10px; color:var(--blue); font-size:2rem; }
-.blog-layout,.faq-layout { display:grid; grid-template-columns:1fr 280px; gap:34px; }
-.blog-tools { display:flex; justify-content:space-between; gap:24px; align-items:center; margin-bottom:28px; }
+.faq-layout {}
 .search-box { display:flex; align-items:center; gap:12px; min-width:260px; border:1px solid #cfd7e6; border-radius:8px; padding:.9rem 1rem; color:#667085; }
 .search-box.wide { width:100%; margin-bottom:18px; }
 .search-box input,.dark-widget input,.newsletter-input { width:100%; border:0; outline:0; background:transparent; color:inherit; }
@@ -263,8 +262,6 @@ body { margin:0; color:#fff; background:var(--night); font-family: Arial, Helvet
 .team-banner h2 { font-size:2.5rem; font-weight:950; line-height:1.08; }
 .team-banner h2 span { color:var(--blue); }
 .team-banner p { margin:18px 0; max-width:500px; color:#e4edf8; line-height:1.7; }
-.home-projects { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; text-align:left; margin-top:28px; }
-.home-blog-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:24px; }
 .home-contact-card { border-radius:12px; background:#020b24; padding:28px; color:white; }
 .home-contact-card .field { background:#06142c; border-color:rgba(255,255,255,.15); color:white; }
 .footer-premium { background:#020b24; color:white; padding-block:42px 24px; border-top:1px solid rgba(255,255,255,.08); }
@@ -294,10 +291,10 @@ body { margin:0; color:#fff; background:var(--night); font-family: Arial, Helvet
   .header-nav { gap:14px; }
   .header-nav-links { min-width:max-content; justify-content:flex-start; gap:18px; }
   .header-cta { padding:.75rem 1rem; font-size:.75rem; }
-  .home-hero-grid,.split-about,.about-story,.home-bottom,.contact-panel,.blog-layout,.faq-layout { grid-template-columns:1fr; }
+  .home-hero-grid,.split-about,.about-story,.home-bottom,.contact-panel,.faq-layout { grid-template-columns:1fr; }
   .service-detail-layout { grid-template-columns:1fr; }
   .sticky-quote { position:static; }
-  .proof-row,.stats-row,.stat-band,.pricing-grid-premium,.values-grid,.home-projects,.unit-category-grid { grid-template-columns:repeat(2,1fr); }
+  .proof-row,.stats-row,.stat-band,.pricing-grid-premium,.values-grid,.unit-category-grid { grid-template-columns:repeat(2,1fr); }
   .mini-card-grid,.service-grid-premium,.project-grid,.article-grid,.footer-grid { grid-template-columns:1fr 1fr; }
   .benefit-strip,.pricing-benefits { grid-template-columns:1fr 1fr; margin-top:0; }
   .contact-info { border-right:0; border-bottom:1px solid var(--line); }
@@ -312,13 +309,12 @@ body { margin:0; color:#fff; background:var(--night); font-family: Arial, Helvet
   .shell { width:min(100% - 28px, 1180px); }
   .home-hero-grid { min-height:auto; padding-block:50px; }
   .page-hero-logo .page-hero-inner { grid-template-columns:1fr; }
-  .proof-row,.stats-row,.stat-band,.mini-card-grid,.service-grid-premium,.project-grid,.article-grid,.pricing-grid-premium,.values-grid,.home-projects,.home-blog-grid,.footer-grid,.benefit-strip,.pricing-benefits,.unit-category-grid { grid-template-columns:1fr; }
+  .proof-row,.stats-row,.stat-band,.mini-card-grid,.service-grid-premium,.project-grid,.article-grid,.pricing-grid-premium,.values-grid,.footer-grid,.benefit-strip,.pricing-benefits,.unit-category-grid { grid-template-columns:1fr; }
   .pricing-premium.featured,.pricing-premium.featured:hover { transform:none; }
   .pricing-premium .plan-description { min-height:0; }
   .unit-pricing-section > h2 { font-size:1.8rem; }
   .detail-card-grid,.included-grid,.examples-grid { grid-template-columns:1fr; }
   .method-timeline article { grid-template-columns:1fr; }
   .cta-band { grid-template-columns:1fr; text-align:left; padding:24px; }
-  .blog-tools { align-items:stretch; flex-direction:column; }
   .search-box { min-width:0; }
 }

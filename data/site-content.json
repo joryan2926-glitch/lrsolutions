@@ -40,7 +40,7 @@
       "text": "Former les dirigeants et équipes aux outils numériques, au marketing, à l'IA et à l'automatisation."
     },
     {
-      "title": "Evénementiel professionnel",
+      "title": "Événementiel professionnel",
       "text": "Structurer, organiser et valoriser vos événements professionnels, rencontres et lancements."
     },
     {
@@ -72,23 +72,6 @@
       "price": "Sur devis",
       "description": "Une solution personnalisée pour les besoins complexes, spécifiques ou évolutifs.",
       "features": ["Prestations personnalisées", "Développement spécifique", "Accompagnement dédié"]
-    }
-  ],
-  "blog": [
-    {
-      "title": "Structurer sa croissance avant d'accélérer",
-      "date": "2026-06-18",
-      "excerpt": "Pourquoi une stratégie claire, des outils simples et un suivi régulier changent la trajectoire d'une entreprise."
-    },
-    {
-      "title": "Créer un site internet qui génère vraiment des demandes",
-      "date": "2026-06-18",
-      "excerpt": "Les fondamentaux d'un site vitrine professionnel : message, confiance, preuves, appels à l'action et vitesse."
-    },
-    {
-      "title": "Automatisation : par où commencer sans complexifier l'entreprise ?",
-      "date": "2026-06-18",
-      "excerpt": "Identifier les tâches répétitives, prioriser les gains rapides et déployer des automatisations utiles."
     }
   ]
 }

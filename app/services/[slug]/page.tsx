@@ -88,7 +88,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               </div>
             </SectionBlock>
 
-            <SectionBlock eyebrow="Réalisations" title="Exemples de projets possibles" icon={Target}>
+            <SectionBlock eyebrow="Exemples" title="Exemples d&apos;accompagnement possibles" icon={Target}>
               <div className="examples-grid">
                 {service.examples.map((item) => <article key={item}><Lightbulb size={24} /><h3>{item}</h3><p>Une mission cadrée pour répondre à un objectif concret et créer un résultat mesurable.</p></article>)}
               </div>

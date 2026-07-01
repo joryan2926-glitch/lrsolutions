@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, BarChart3, BriefcaseBusiness, Check, Code2, Handshake, Megaphone, ShieldCheck, Sparkles, Users, Workflow } from "lucide-react";
 import { ContactForm } from "@/components/Forms";
 import { getContent } from "@/lib/content";
-import { blogPosts, projects, stats } from "@/lib/site";
+import { stats } from "@/lib/site";
 import { servicePages } from "@/lib/service-pages";
 
 export const dynamic = "force-dynamic";
@@ -70,20 +70,18 @@ export default async function Home() {
           <div className="pricing-grid-premium compact-pricing">{featuredPricing.map((pack, index) => <article className={index === 1 ? "pricing-premium featured" : "pricing-premium"} key={pack.name}><h3>{pack.name}</h3><strong>{pack.price}</strong><p>{pack.description}</p><Link href="/contact?type=devis">Choisir cette offre</Link></article>)}</div>
         </div>
 
-        <div className="shell section-mini">
-          <span className="eyebrow">Réalisations</span>
-          <h2>Ils nous font confiance</h2>
-          <div className="home-projects">{projects.slice(0, 4).map((project) => <article className="project-card" key={project.title}><Image src={project.image} alt="" width={900} height={520} className="project-image" /><div className="p-5"><h3>{project.title}</h3><p>{project.category}</p></div></article>)}</div>
-        </div>
-
         <div className="shell home-bottom">
           <div>
-            <span className="eyebrow">Nos derniers articles</span>
-            <h2>Actualités & conseils</h2>
-            <div className="home-blog-grid">{blogPosts.slice(0, 3).map((post) => <article className="article-card" key={post.title}><Image src={post.image} alt="" width={900} height={520} className="project-image" /><div className="p-4"><span className="tag">{post.category}</span><h3>{post.title}</h3><Link href="/blog">Lire la suite <ArrowRight size={14} /></Link></div></article>)}</div>
+            <span className="eyebrow">Parlons de votre projet</span>
+            <h2>Un besoin concret, une réponse claire</h2>
+            <p className="mt-4 leading-8 text-slate-600">Décrivez votre besoin, votre contexte et vos objectifs. L&R SOLUTIONS vous répond avec une approche structurée, lisible et orientée résultats.</p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <Link className="btn btn-primary" href="/contact?type=devis">Demander un devis <ArrowRight size={16} /></Link>
+              <Link className="btn btn-dark" href="/contact">Nous contacter</Link>
+            </div>
           </div>
           <div className="home-contact-card">
-            <span className="eyebrow">Parlons de votre projet</span>
+            <span className="eyebrow">Contact</span>
             <h2>Contactez-nous</h2>
             <ContactForm type="contact" />
           </div>

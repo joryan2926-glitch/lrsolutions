@@ -11,8 +11,6 @@ const nav = [
   ["À propos", "/a-propos"],
   ["Services", "/services"],
   ["Tarifs", "/tarifs"],
-  ["Réalisations", "/realisations"],
-  ["Blog", "/blog"],
   ["FAQ", "/faq"],
   ["Contact", "/contact"],
 ];
@@ -89,7 +87,7 @@ export function Footer() {
         </div>
         <div>
           <strong>Newsletter</strong>
-          <p className="mt-4 text-sm text-slate-400">Recevez nos conseils et actualités.</p>
+          <p className="mt-4 text-sm text-slate-400">Recevez nos conseils.</p>
           <input className="newsletter-input mt-5" placeholder="Votre email" />
           <button className="btn btn-primary mt-4 w-full" type="button">S&apos;inscrire</button>
         </div>

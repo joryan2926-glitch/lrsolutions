@@ -29,25 +29,6 @@ export const serviceBenefits = [
   ["Accompagnement continu", "Nous restons à vos côtés à chaque étape."],
 ];
 
-export const projects = [
-  { title: "Site e-commerce - Mode & Accessoires", category: "Sites Web", year: "2024", image: "/visual-commerce.svg", text: "Création d'une boutique en ligne performante avec une expérience utilisateur optimale et un tunnel d'achat fluide." },
-  { title: "Plateforme SaaS de gestion", category: "Applications Web", year: "2024", image: "/visual-saas.svg", text: "Développement d'une plateforme de pilotage pour la gestion d'activité et le suivi de performance en temps réel." },
-  { title: "Campagne Marketing Digitale", category: "Marketing & Communication", year: "2024", image: "/visual-marketing.svg", text: "Optimisation de campagnes Google Ads et Meta Ads avec analyse du ROI et reporting." },
-  { title: "Application de réservation", category: "Applications Web", year: "2024", image: "/visual-booking.svg", text: "Application web et mobile de réservation en ligne avec gestion des disponibilités." },
-  { title: "Branding & Identité Visuelle", category: "Marketing & Communication", year: "2024", image: "/visual-branding.svg", text: "Création d'une identité de marque complète : logo, charte graphique et supports." },
-  { title: "Site vitrine - Cabinet de conseil", category: "Sites Web", year: "2024", image: "/visual-consulting.svg", text: "Site moderne et professionnel pour valoriser l'expertise et générer des contacts qualifiés." },
-];
-
-export const blogCategories = ["Stratégie", "Marketing", "Digital", "Développement", "Gestion", "Conseils"];
-
-export const blogPosts = [
-  { title: "5 stratégies pour développer votre entreprise en 2026", category: "Stratégie", date: "24 Juin 2026", readTime: "5 min", image: "/visual-city.svg", excerpt: "Découvrez les stratégies incontournables pour accélérer la croissance de votre entreprise cette année." },
-  { title: "Le marketing digital : un levier incontournable", category: "Marketing", date: "5 Juin 2026", readTime: "6 min", image: "/visual-laptop.svg", excerpt: "Comment le marketing digital peut transformer votre visibilité et générer plus de clients." },
-  { title: "L'automatisation des processus : gagnez en efficacité", category: "Digital", date: "10 Mai 2026", readTime: "4 min", image: "/visual-automation.svg", excerpt: "Automatisez vos tâches répétitives et concentrez-vous sur l'essentiel." },
-  { title: "Site web performant : les 7 éléments essentiels", category: "Développement", date: "20 Mai 2026", readTime: "7 min", image: "/visual-code.svg", excerpt: "Les éléments clés pour créer un site web performant qui convertit vos visiteurs." },
-  { title: "Digitalisation des entreprises : par où commencer ?", category: "Digital", date: "15 Mai 2026", readTime: "6 min", image: "/visual-digital.svg", excerpt: "Un guide pratique pour réussir la transformation numérique de votre entreprise." },
-  { title: "Bien choisir ses outils pour optimiser sa productivité", category: "Conseils", date: "8 Mai 2026", readTime: "5 min", image: "/visual-team.svg", excerpt: "Les meilleurs outils pour améliorer la collaboration et la productivité de vos équipes." },
-];
 
 export const faqs = [
   { category: "Général", question: "Qu'est-ce que L&R SOLUTIONS ?", answer: "L&R SOLUTIONS est une société spécialisée dans le conseil, la digitalisation, le développement numérique et l'accompagnement des entreprises." },

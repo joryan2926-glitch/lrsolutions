@@ -35,7 +35,7 @@ export function AdminPanel({ initialContent }: { initialContent: SiteContent }) 
       <aside className="border-r border-white/10 p-6">
         <h1 className="text-xl font-bold">Administration</h1>
         <p className="mt-3 text-sm leading-6 text-slate-400">
-          Back-office pour modifier les contenus, les services, les tarifs, les articles et consulter les demandes.
+          Back-office pour modifier les contenus, les services, les tarifs et consulter les demandes.
         </p>
         <input className="field mt-6" placeholder="ADMIN_TOKEN" type="password" value={token} onChange={(event) => setToken(event.target.value)} />
         <button className="btn btn-primary mt-4 w-full" onClick={save} type="button">Sauvegarder</button>
@@ -95,32 +95,6 @@ export function AdminPanel({ initialContent }: { initialContent: SiteContent }) 
             ))}
           </div>
         </section>
-
-        <section className="glass p-5">
-          <h2 className="text-lg font-bold">Articles de blog</h2>
-          <div className="mt-4 grid gap-3">
-            {content.blog.map((post, index) => (
-              <div className="grid gap-2 md:grid-cols-[.25fr_.35fr_1fr]" key={index}>
-                <input className="field" value={post.date} onChange={(event) => {
-                  const next = [...content.blog];
-                  next[index] = { ...post, date: event.target.value };
-                  setContent({ ...content, blog: next });
-                }} />
-                <input className="field" value={post.title} onChange={(event) => {
-                  const next = [...content.blog];
-                  next[index] = { ...post, title: event.target.value };
-                  setContent({ ...content, blog: next });
-                }} />
-                <input className="field" value={post.excerpt} onChange={(event) => {
-                  const next = [...content.blog];
-                  next[index] = { ...post, excerpt: event.target.value };
-                  setContent({ ...content, blog: next });
-                }} />
-              </div>
-            ))}
-          </div>
-        </section>
-
         <section className="glass p-5">
           <h2 className="text-lg font-bold">Demandes contact & devis</h2>
           <div className="mt-4 grid gap-3">

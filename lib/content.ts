@@ -5,14 +5,12 @@ export { company } from "@/lib/site";
 
 export type Service = { title: string; text: string };
 export type Pricing = { name: string; price: string; description: string; features: string[] };
-export type BlogPost = { title: string; date: string; excerpt: string };
 export type SiteContent = {
   heroTitle: string;
   heroText: string;
   slogan: string;
   services: Service[];
   pricing: Pricing[];
-  blog: BlogPost[];
 };
 
 export async function getContent(): Promise<SiteContent> {
